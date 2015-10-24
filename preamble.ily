@@ -47,11 +47,13 @@ breakingCoda = {
   \mark \markup { \musicglyph #"scripts.coda" }
 }
 
-#(set-global-staff-size 11)
-#(set-default-paper-size "letter" 'portrait)
 
-#(set! %load-path `("scheme" ,@%load-path))
-#(load-from-path "custom-line-breaks-engraver.scm")
-#(load-from-path "maybe-rhythmic-staff.scm")
-#(load-from-path "drums.scm")
-#(load-from-path "parenthesize.scm")
+#(begin
+  (set-global-staff-size 11)
+  (set-default-paper-size "letter" 'portrait)
+
+  (set! %load-path `("scheme" ,@%load-path))
+  (load-from-path "custom-line-breaks-engraver.scm")
+  (load-from-path "maybe-rhythmic-staff.scm")
+  (load-from-path "drums.scm")
+  (load-from-path "parenthesize.scm"))
