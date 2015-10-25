@@ -1,0 +1,5 @@
+\registerPerson #'sam.albers   "Sam Albers"   "" % "(1992-)"
+\registerPerson #'eric.bailey  "Eric Bailey"  "" % "(1989-)"
+\registerPerson #'preston.drum "Preston Drum" "" % "(1983-)"
+\registerPerson #'andrew.smith "Andrew Smith" "" % "(1990-)"
+\registerPerson #'naptaker     "Naptaker"     "" % "(2012-)"
