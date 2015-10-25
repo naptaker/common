@@ -57,3 +57,12 @@ breakingCoda = {
   (load-from-path "maybe-rhythmic-staff.scm")
   (load-from-path "drums.scm")
   (load-from-path "parenthesize.scm"))
+
+\include "lalily.ly"
+
+#(begin
+   (set-registry-val '(lalily person arranger pre) "Arranged by")
+   (set-registry-val '(lalily person composer pre) "Music by")
+   (set-registry-val '(lalily person poet     pre) "Words by")
+   (set-registry-val '(lalily header copyright)
+     #{ \markup { \with-url #"http://naptakerrr.com" "Naptaker" } #}))
